@@ -18,6 +18,9 @@ Pod::Spec.new do |s|
 	s.source_files		    = "VialerPJSIP.framework/Versions/A/Headers/**/*.{h,hpp}"
 	s.vendored_frameworks   = "VialerPJSIP.framework"
 
+	s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+	s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+
 	s.libraries 			= 'stdc++'
 	s.frameworks            = "AudioToolbox", "AVFoundation", "CFNetwork",  "CoreMedia"
 	s.xcconfig = {
