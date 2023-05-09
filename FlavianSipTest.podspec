@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-	s.name                  = "flavian-sip-test"
+	s.name                  = "FlavianSipTest"
 	s.version               = "1.0.0"
 	s.summary               = "PJSIP 2.13 for iOS"
 	s.description           = "Pod for distributing PJSIP 2.13 wrapped in a framework. With Opus, OpenSSL and openh264."
