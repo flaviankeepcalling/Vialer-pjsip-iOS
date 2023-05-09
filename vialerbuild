@@ -7,7 +7,7 @@ AVIALABLE_ARCHS=(
     "x86_64"
 )
 export BASE_DIR=`pwd`
-export MIN_IOS_VERSION="11.0"
+export MIN_IOS_VERSION="10.0"
 export IOS_SDK_VERSION="14.3"
 export AVIALABLE_ARCHS
 export USE_ARCHS=()
@@ -186,7 +186,7 @@ function build_h264 () {
 
     rm -rf $H264_BUILD_DIR
 
-    h264_version="2.0.0";
+    h264_version="2.3.1";
     h264_url="https://github.com/cisco/openh264/archive/v${h264_version}.tar.gz"
     h264_target_path="$H264_BUILD_DIR/src"
 
